@@ -1,36 +1,169 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Study Abroad Frontend Technical Assessment
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is built using Next.js, TypeScript, Zustand, and Material UI (MUI).
+
+The application includes:
+- Authentication system
+- Protected routes
+- Users management
+- Products management
+- Search functionality
+- Pagination
+- Category filtering
+- Product details pages
+- Responsive dashboard UI
+- Client-side caching
+- Performance optimizations
+
+All backend data is fetched from the DummyJSON public REST API.
+
+---
+
+# Features
+
+## Authentication
+- Admin login using DummyJSON Auth API
+- Zustand state management
+- Protected dashboard routes
+- Token persistence using localStorage
+
+---
+
+## Users Module
+- Users listing page
+- Search users
+- Pagination support
+- Single user details page
+- Responsive MUI table layout
+
+---
+
+## Products Module
+- Products listing page
+- Search products
+- Category filtering
+- Pagination support
+- Single product details page
+- Product image carousel
+- Responsive MUI grid layout
+
+---
+
+# Technologies Used
+
+- Next.js 16
+- TypeScript
+- Material UI (MUI)
+- Zustand
+- Axios
+- DummyJSON REST API
+
+---
+
+# Zustand State Management
+
+Zustand was selected because:
+- Lightweight and simple
+- Minimal boilerplate
+- Easy async API handling
+- Faster setup compared to Redux
+- Ideal for small and medium-sized applications
+
+---
+
+# Performance Optimizations
+
+## React.memo
+Used to avoid unnecessary re-rendering of reusable components like ProductCard.
+
+## useMemo
+Used for optimized pagination calculations.
+
+## useCallback
+Used for optimizing reusable API functions.
+
+## API-side Pagination
+Implemented using limit and skip parameters to prevent loading large datasets.
+
+---
+
+# Client-side Caching
+
+Caching is implemented using Zustand store state.
+
+Benefits:
+- Reduces unnecessary API requests
+- Improves application performance
+- Improves user experience
+
+---
+
+# Installation
+
+```bash
+npm install
+```
+
+---
+
+# Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Build Project
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start Production Server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# API Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+https://dummyjson.com/
+
+---
+
+# Authentication Credentials
+
+```txt
+Username: emilys
+Password: emilyspass
+```
+
+---
+
+# Folder Structure
+
+```txt
+src/
+ ├── app/
+ ├── components/
+ ├── services/
+ ├── store/
+```
+
+---
+
+# Notes
+
+Authentication is implemented using Zustand and DummyJSON Auth API.
+
+The next-auth package is installed and can be extended further for production-level authentication flows.
