@@ -1,5 +1,6 @@
 # Study Abroad Frontend Technical Assessment
-Repository Link : https://github.com/Sukhmansidhu/study-abroad-assessment.git
+Repository Link :
+ https://github.com/Sukhmansidhu/study-abroad-assessment
 ## Project Overview
 
 This project is built using Next.js, TypeScript, Zustand, and Material UI (MUI).
